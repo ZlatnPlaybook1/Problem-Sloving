@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count-of-positives-sum-of-negatives</title>
+  </head>
+  <body>
+    <!-- Given an array of integers. Return an array, where the first element is the count of positives
+numbers and the second element is sum of negative numbers. O is neither positive nor negative.
+If the input is an empty array or is null, return an empty array.
+Example
+For input [1, 2, 3, 4, 5, 6,7,8,9,10 ,-11,-12,-13,-14,-15]  you should return [10,-64] -->
+    <script>
+      function CountPositives_SumNegatives(array) {
+        // if (array == null || array.length === 0) {
+        //   return [];
+        // }
+        // let countPositives = 0;
+        // let sumNegatives = 0;
+        // for (let i = 0; i < array.length; i++) {
+        //   if (array[i] > 0) {
+        //     countPositives++;
+        //   } else {
+        //     sumNegatives += array[i];
+        //   }
+        // }
+        // return [countPositives, sumNegatives];
+        let positiveArray = array.filter((x) => x > 0).length;
+        let sumNegative = array.filter((x) => x < 0).reduce((acc , current) => current+acc , 0 )
+        return [positiveArray , sumNegative]
+      }
+
+      let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+      document.write(CountPositives_SumNegatives(array));
+    </script>
+  </body>
+</html>

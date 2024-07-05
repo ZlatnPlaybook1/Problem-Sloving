@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Char</title>
+  </head>
+  <body>
+    <!-- Given a string, you have to return a string in which each character (case-
+sensitive) is repeated once.
+ -->
+    <script>
+      function doubleChar(str) {
+        return str
+          .split("")
+          .map((s) => s.repeat(2))
+          .join("");
+      }
+      console.log(doubleChar("String"));
+      console.log(doubleChar("Hello World"));
+      console.log(doubleChar("123!_"));
+
+    </script>
+  </body>
+</html>

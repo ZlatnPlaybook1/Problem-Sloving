@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Remove String Spaces </title>
+</head>
+<body>
+<script> 
+    // Simple, remove the spaces from the string, then return the resultant string.
+    function noSpace(str) {
+        const reg = /\s+/g ;
+    // return str.split(' ').join('');
+    return str.replace(reg, '');
+}
+
+console.log(noSpace("html css j s"));
+console.log(noSpace("H e Llo Wolrd")); 
+
+
+</script>
+
+
+    
+</body>
+</html>

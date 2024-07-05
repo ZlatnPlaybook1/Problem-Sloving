@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Returning negative</title>
+  </head>
+  <body>
+    <script>
+      // In this simple assignment you are given a number and have to make it
+      //negative. But maybe the number is already negative?
+      // Examples
+      // makeNegative (1) ;
+      // makeNegative(-5) ;
+      // makeNegative (0) ;
+      // makeNegative(0.12) ;
+      // return -1
+      // return -5
+      // return 0
+      // return -0.12
+
+      function makeNegative(number) {
+        return number > 0 ? -number : number;
+      }
+      document.write(makeNegative(1));
+      document.write("<br>")
+      document.write(makeNegative(-5));
+      document.write("<br>")
+      document.write(makeNegative(0.12));
+
+    </script>
+  </body>
+</html>
